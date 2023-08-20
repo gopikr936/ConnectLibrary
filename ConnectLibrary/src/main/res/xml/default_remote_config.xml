@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- START xml_defaults -->
+<defaultsMap>
+    <entry>
+        <key>safetynet_flag</key>
+        <value>test me</value>
+    </entry>
+    <entry>
+        <key>refresh_token_flag</key>
+        <value>enabled</value>
+    </entry>
+</defaultsMap>
+<!-- END xml_defaults -->

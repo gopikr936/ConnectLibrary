@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <WebView
+        android:id="@+id/activity_connect_webview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </WebView>
+
+    <FrameLayout
+        android:id="@+id/safetynet_fragment"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/splash"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:clickable="true"
+        android:background="@color/splash_background">
+
+        <ImageView
+            android:id="@+id/img_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:layout_margin="8dp"
+            android:contentDescription="Eloka Loading"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_appName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:contentDescription="Infinity Loading"
+            android:fontFamily="sans-serif-medium"
+            android:textColor="#0B0A0A"
+            android:textSize="32dp"
+            tools:text="Infinity" />
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:visibility="visible"
+            android:indeterminateOnly="true"/>
+
+        <Button
+            android:id="@+id/btnReload"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="15dp"
+            android:background="#FFFFFF"
+            android:padding="5dp"
+            android:text="@string/reload"
+            android:textColor="#333333"
+            android:visibility="invisible" />
+    </LinearLayout>
+
+
+    <TextView
+        android:id="@+id/txtDebug"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:layout_marginLeft="-20dp"
+        android:layout_marginTop="5dp"
+        android:rotation="-45"
+        android:text="DEBUG"
+        android:clickable="false"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@android:color/white"
+        android:background="@android:color/black"
+        android:textSize="8sp"
+        android:visibility="gone" />
+
+</FrameLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Leegality SDK</string>
+    <string name="notification_error_ssl_cert_invalid">Allow insecure certificates.</string>
+    <style name="MyAlertDialogStyle" parent="Theme.AppCompat.Light.Dialog.Alert">
+        <item name="android:textColor">#000000</item>
+        <item name="android:background">#FFFFFF</item>
+        <item name="colorAccent">#015178</item>
+    </style>
+</resources>

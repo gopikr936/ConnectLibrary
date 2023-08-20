@@ -1,0 +1,43 @@
+<resources>
+
+    <string name="app_name">Connect</string>
+    <string name="base_url" translatable="false">https://connect.eko.in</string>
+    <string name="base_url_debug" translatable="false">https://beta.ekoconnect.in</string>
+    <string name="startup_path" translatable="false">/#!/source/androidwebview</string>
+
+    <string name="permission_location_rationale">Connect needs to get your current location to function properly.</string>
+    <string name="permission_camera_rationale">To use camera, click Allow in the next screen.</string>
+    <string name="permission_alert_dialog_title">%s permission required</string>
+    <string name="permission_alert_dialog_message">Connect required %s permission to function properly. Please allow permission in app setting.</string>
+    <string name="allow">Allow</string>
+
+    <string name="default_notification_channel_id">Important Notifications</string>
+    <string name="high_notification_channel_id">Critical Eko Notifications</string>
+    <string name="low_notification_channel_id">Normal Eko Notifications</string>
+
+    <string name="reload">Check internet connection &amp; retry</string>
+    <string name="reject_rooted">This device is rooted. App will not start!</string>
+
+    <string name="disabled">disabled</string>
+    <string name="enabled">enabled</string>
+
+    <string name="fetch_succeeded">Fetch Succeeded</string>
+    <string name="fetch_failed">Fetch Failed</string>
+    <string name="google_login_failed">Google login failed</string>
+    <string name="google_play_not_updated">Google Play is not updated</string>
+
+    <string name="file_saved">File saved in Downloads folder</string>
+    <string name="file_save_failed">Failed to save file</string>
+    <string name="storage_unavailable">Storage not available</string>
+    <string name="file_save_permission_rejected">Connect needs access to external storage to save files.</string>
+
+
+    <!--Biometric -->
+    <string name="biometric_enable_title">Enable biometric sign in</string>
+    <string name="biometric_enable_subtitle">"For faster and more secure sign in"</string>
+    <string name="biometric_enable_negative">Cancel</string>
+    <string name="biometric_auth_title">Sign in using biometric</string>
+    <string name="biometric_auth_subtitle">"For faster and more secure sign in"</string>
+    <string name="biometric_auth_negative">Cancel</string>
+
+</resources>

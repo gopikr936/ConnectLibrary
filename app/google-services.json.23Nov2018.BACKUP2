@@ -1,0 +1,63 @@
+{
+  "project_info": {
+    "project_number": "867733226265",
+    "firebase_url": "https://eko-new-connect.firebaseio.com",
+    "project_id": "eko-new-connect",
+    "storage_bucket": "eko-new-connect.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:867733226265:android:a944ff81e333d6cb",
+        "android_client_info": {
+          "package_name": "in.eko.connect"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "867733226265-7p7vh2h4f1fjdu16resis197qma050mu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.eko.connect",
+            "certificate_hash": "4bfd3990e6c9ce7c2ccd0ad55b9fb5476f3aae0e"
+          }
+        },
+        {
+          "client_id": "867733226265-t19v8vjps3rjg3v51m18muuedirnfmba.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "in.eko.connect",
+            "certificate_hash": "1b774ee4c8fe91770984ac13365b011ff75780b7"
+          }
+        },
+        {
+          "client_id": "867733226265-5lq7qccr4ot3n8tpci7dj3fb2si6gkdv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA-2YtFPkm12iOyCxoEx3F89LgS2KDUWxs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "867733226265-5lq7qccr4ot3n8tpci7dj3fb2si6gkdv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

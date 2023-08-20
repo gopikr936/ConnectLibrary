@@ -1,0 +1,4 @@
+/build
+
+#secret
+ConnectLibrary/src/main/res/values/secrets.xml

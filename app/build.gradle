@@ -1,0 +1,74 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+    id 'com.google.firebase.crashlytics'
+    id 'com.google.firebase.firebase-perf'
+}
+
+// Load secrets keystore
+def secretPropertiesFile = rootProject.file("secrets.properties")
+def secretProperties = new Properties()
+secretProperties.load(new FileInputStream(secretPropertiesFile))
+
+android {
+
+    signingConfigs {
+        release {
+            storeFile file('../PUBLISH/connectandroid-release-key.keystore')
+            storePassword '1nd4k013feb2018ggnappadmin6d'
+            keyAlias 'keyconnectapp'
+            keyPassword 'keyconnectapp'
+        }
+    }
+
+    compileSdkVersion 33
+    defaultConfig {
+        applicationId "in.eko.connect"
+        minSdkVersion 21
+        targetSdkVersion 33
+        versionCode 76
+        versionName "22.2.6"    // 22.2.6 = TargetSDK to 33
+        // testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        signingConfig signingConfigs.release
+
+        buildConfigField("String", "google_server_client_id", secretProperties["google_server_client_id"])
+        buildConfigField("String", "web_url", secretProperties["web_url"])
+        buildConfigField("String", "web_uat_url", secretProperties["web_uat_url"])
+    }
+
+    buildTypes {
+        release {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable false
+        }
+        debug {
+            signingConfig signingConfigs.release
+            minifyEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            debuggable true
+        }
+    }
+    compileOptions {
+        sourceCompatibility = 1.8
+        targetCompatibility = 1.8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+
+    implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.8.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+
+    implementation project(path: ':ConnectLibrary')
+
+    implementation 'com.google.firebase:firebase-perf:20.0.3'
+
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+}
+

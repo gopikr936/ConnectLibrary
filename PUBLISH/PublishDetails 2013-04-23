@@ -1,0 +1,80 @@
+BETA PUBLISH:
+
+
+https://play.google.com/apps/publish/v2/
+app.admin@eko.co.in
+Connect123.			[OLD:  eko.app.admin@12345]
+
+
+
+## KEYSTORE:
+Keystore: /home/abhi/CODING/Eko Projects/Connect_On_Android/PUBLISH/connectandroid-release-key.keystore
+Password: 1nd4k013feb2018ggnappadmin6d
+
+
+## KEY:
+Alias: keyconnectapp
+Pass: same	(keyconnectapp)
+First/Last Name: Kumar Abhishek
+Organizational Unit: Engg
+Organization: Eko India Financial Services Pvt. Ltd.
+City: Gurgaon
+State: Haryana
+Country Code: IN
+
+--------------------------------------------------------------
+
+Export certificate:
+	keytool -exportcert -list -v -alias keyconnectapp -keystore connectandroid-release-key.keystore
+
+		Enter keystore password:
+		Alias name: keyconnectapp
+		Creation date: 13 Feb, 2018
+		Entry type: PrivateKeyEntry
+		Certificate chain length: 1
+		Certificate[1]:
+		Owner: CN=Kumar Abhishek, OU=Engg, O=Eko India Financial Services Pvt. Ltd., L=Gurgaon, ST=Haryana, C=IN
+		Issuer: CN=Kumar Abhishek, OU=Engg, O=Eko India Financial Services Pvt. Ltd., L=Gurgaon, ST=Haryana, C=IN
+		Serial number: 2a9dc6dd
+		Valid from: Tue Feb 13 13:24:25 IST 2018 until: Sat Feb 07 13:24:25 IST 2043
+		Certificate fingerprints:
+			 MD5:  D5:AE:DA:88:64:01:91:3B:53:C2:ED:BF:4E:B9:BE:A1
+			 SHA1: 4B:FD:39:90:E6:C9:CE:7C:2C:CD:0A:D5:5B:9F:B5:47:6F:3A:AE:0E
+			 SHA256: F5:51:36:87:B2:A9:C9:46:02:3C:44:F5:80:96:92:60:16:20:61:EF:A9:51:A9:10:59:F4:D2:36:A0:49:85:A7
+		Signature algorithm name: SHA256withRSA
+		Subject Public Key Algorithm: 2048-bit RSA key
+		Version: 3
+
+		Extensions:
+
+		#1: ObjectId: 2.5.29.14 Criticality=false
+		SubjectKeyIdentifier [
+		KeyIdentifier [
+		0000: 05 04 53 B8 17 CF 25 D8   56 BF C3 25 C3 A1 D2 FE  ..S...%.V..%....
+		0010: 35 80 B6 03                                        5...
+		]
+		]
+
+		Warning:
+		The JKS keystore uses a proprietary format. It is recommended to migrate to PKCS12 which is an industry standard format using "keytool -importkeystore -srckeystore connectandroid-release-key.keystore -destkeystore connectandroid-release-key.keystore -deststoretype pkcs12".
+
+
+	######## Certificate Key Hash ...
+
+		keytool -exportcert -list -v -alias keyconnectapp -keystore connectandroid-release-key.keystore | openssl sha1 -binary | openssl base64
+
+			gGNB2ehKis6uJQIkbeQx/cHqXHc=
+
+
+--------------------------------------------------------------
+
+Google Analytics:
+
+	https://www.google.com/analytics/web
+
+	Account Name: EkoAppAdmin
+	App Name: EkoDial
+	Tracking ID: UA-49819690-1
+
+
+--------------------------------------------------------------
